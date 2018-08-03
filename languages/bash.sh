@@ -1,4 +1,11 @@
 #!/bin/bash
+
+Working on adding this Japanese perspective which is far more complete
+overview of bash:
+
+https://raw.githubusercontent.com/skywind3000/awesome-cheatsheets/master/languages/bash.sh
+
+
 ##############################################################################
 # SHORTCUTS
 ##############################################################################
@@ -133,6 +140,16 @@ ssh user@host            # connects to host as user
 ssh -p <port> user@host  # connects to host on specified port as user
 ssh-copy-id user@host    # adds your ssh key to host for user to enable a keyed or passwordless login
 
+
+ps -u yourusername       # lists your processes
+ps ax                    # 
+ps aux                   # 
+ps auxww                 # 
+pstree                   # 
+pstree <user>            #
+pgrep <procname>         #
+
+
 whoami                   # returns your username
 passwd                   # lets you change your password
 quota -v                 # shows what your disk quota is
@@ -146,7 +163,7 @@ man <command>            # shows the manual for specified command
 df                       # shows disk usage
 du <filename>            # shows the disk usage of the files and directories in filename (du -s give only a total)
 last <yourUsername>      # lists your last logins
-ps -u yourusername       # lists your processes
+
 kill <PID>               # kills (ends) the processes with the ID you gave
 killall <processname>    # kill all processes with the name
 top                      # displays your currently active processes
