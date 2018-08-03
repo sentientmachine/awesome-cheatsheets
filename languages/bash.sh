@@ -11,6 +11,8 @@ CTRL+D  # deletes one character backward or logs out of current session, similar
 CTRL+E  # moves to end of line
 CTRL+F  # moves forward one character
 CTRL+G  # aborts the current editing command and ring the terminal bell
+CTRL+H  # 
+CTRL+I  # 
 CTRL+J  # same as RETURN
 CTRL+K  # deletes (kill) forward to end of line
 CTRL+L  # clears screen and redisplay the line
@@ -18,6 +20,7 @@ CTRL+M  # same as RETURN
 CTRL+N  # next line in command history
 CTRL+O  # same as RETURN, then displays next line in history file
 CTRL+P  # previous line in command history
+CTRL+Q  #
 CTRL+R  # searches backward
 CTRL+S  # searches forward
 CTRL+T  # transposes two characters
@@ -28,15 +31,52 @@ CTRL+X  # lists the possible filename completefions of the current word
 CTRL+Y  # retrieves (yank) last item killed
 CTRL+Z  # stops the current command, resume with fg in the foreground or bg in the background
 
+ALT+b           #
+ALT+d           #
+ALT+f           #
+ALT+t           #
+ALT+Backspace   #
+
 DELETE  # deletes one character backward
 !!      # repeats the last command
-exit    # logs out of current session
 
+CTRL+X CTRL+X
+CTRL+X CTRL+E
+
+##############################################################################
+# BASH
+##############################################################################
+
+exit             # logs out of current session
+env              # 
+echo $SHELL      #
+bash             #
+which bash       #
+whereis bash     #
+whatis bash      #
+clear            #
+reset            #
+
+##############################################################################
+# DIRECTORY COMMANDS
+##############################################################################
+
+
+mkdir <dirname>  # makes a new directory
+mkdir -p <dirname>  # makes a new directory, creates depth if not already exists.
+cd               # changes current directory to /home/youruser
+cd <dirname>     # changes to directory specified
+pwd              # Print working directory, tells you where you currently are
+
+pushd <dirname>   #
+popd              #
+dirs -v           #
+cd -              #
+cd -{N}           #
 
 ##############################################################################
 # BASH BASICS
 ##############################################################################
-
 
 export              # displays all environment variables
 
@@ -82,15 +122,6 @@ grep <pattern> <filenames>    # looks for the string in the files
 grep -r <pattern> <dir>       # search recursively for pattern in directory
 
 
-##############################################################################
-# DIRECTORY COMMANDS
-##############################################################################
-
-
-mkdir <dirname>  # makes a new directory
-cd               # changes to home
-cd <dirname>     # changes directory
-pwd              # tells you where you currently are
 
 
 ##############################################################################
@@ -128,6 +159,30 @@ whois <domain>           # gets whois information for domain
 dig <domain>             # gets DNS information for domain
 dig -x <host>            # reverses lookup host
 wget <file>              # downloads file
+
+whoami                #
+who                   #
+w                     #
+users                 #
+passwd                #
+finger <user>         #
+adduser <user>        #
+deluser <user>        #
+w                     #
+su                    #
+su -                  #
+su <user>             #
+su -<user>            #
+id <user>             #
+id -u <user>          #
+id -g <user>          #
+write <user>          #
+last                  #
+last <user>           #
+lastb                 #
+lastlog               #
+sudo <command>        #
+
 
 
 ##############################################################################
